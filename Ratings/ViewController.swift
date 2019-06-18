@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StoreKit
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func reviewAction(_ sender: UIButton) {
+        
+        SKStoreReviewController.requestReview()
+    }
+    
 }
 
